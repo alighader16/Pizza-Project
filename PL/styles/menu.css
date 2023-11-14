@@ -1,0 +1,166 @@
+main{
+	background-image: url("../img/background.jpg");
+}
+
+section{
+	padding-bottom:20px;
+}
+
+#top-row-controls-menu, #bottom-row-controls-menu{
+	display:flex;
+	min-width: 100%;
+	padding:20px 10px;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+#top-row-controls-menu{
+	padding-top:50px;	
+	padding-bottom:0px;
+}
+
+#bottom-row-controls-menu{
+	gap:50px;
+}
+
+.form-control-menu{
+	display: flex;	
+}
+
+.form-control-menu label{
+	background-color: #ff9100;
+	color: white;
+	padding:10px;
+	border:none !important;
+	outline: none !important;
+}
+
+.fcm-up{
+	border: 1px solid #ff9100;
+	border-radius: 5%;
+}
+
+.form-control-menu select{
+	border:none !important;;
+	outline:none !important;
+	font-size: 16px;
+	padding:10px;
+}
+
+#search-bar{
+	display: flex;
+	gap: 0;
+	min-width:100%;
+	width:100%;
+}
+
+#search-input{
+	min-width:90%;
+	width:90%;
+}
+
+
+#search-input, #search-button, #button-reset{
+	border:1px solid #ff9100;
+	padding:10px;
+	font-size:16px;
+}
+
+
+#search-button, #button-reset{
+	border-left: none;
+	color:white;
+	background-color: #ff9100;
+	min-width:5%;
+	width:5%;
+}
+
+
+
+#search-button:hover, #button-reset:hover{
+	color:white;
+	background-color: #b36705;
+	cursor:pointer;
+}
+
+
+
+#homepage-about-us{
+	min-height: 500px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color:white;
+	padding:0px 300px !important;
+	background: rgba(0, 0, 0, .65) url("../img/restaurantBackground.png");
+	background-blend-mode: darken;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#homepage-about-us > * {
+   margin:20px 0px !important; 
+}
+
+#homepage-about-us > p{
+   line-height: 30px;
+}
+
+
+@media (max-width:767px) {
+	#homepage-about-us{
+		padding:0px 100px !important;
+	}
+	#search-input{
+		min-width:80%;
+		width:80%;
+	}
+	#search-button, #button-reset{
+		min-width:10%;
+		width:10%;
+	}
+	#bottom-row-controls-menu{
+		flex-wrap: wrap;
+	}
+	.wrapper {
+		max-width: 100%;
+		width:100%;
+	  }
+}
+
+header{
+	background-color: #fffbf6;
+}
+
+
+#menu-items-main{
+	padding-top:0px;	
+	display: flex;
+	gap: 2rem;
+	margin-top: 20px;
+	cursor: pointer;
+	max-width: 100%;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+main{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
+#menu-none-found{
+	font-size: 24px;
+	color:#ff9100;
+	font-weight: bold;
+	text-align: center;
+}
+
+
+#tab-all{
+	margin-left:10px;
+}

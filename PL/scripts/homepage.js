@@ -19,16 +19,11 @@ $(document).ready( function(){
    
         //formattedValue = base price
         //now get quantity
-        
         quantity = parseFloat($(cardParent).find(".ctrl__counter-num").text());
-        console.log("parent: "  + $(cardParent).html());
-        console.log("quantity" + quantity);
         formattedQuantity = parseFloat(quantity).toFixed(2);
         //multiply price by quantity
         price = formattedQuantity * formattedValue;
-        console.log("price: " + price)
         formattedPrice = parseFloat(price).toFixed(2);
-        console.log(formattedQuantity + " * " + formattedValue + " = " + formattedPrice);
         $(cardParent).find(".last-row-price").text("$" + formattedPrice);
       });
 

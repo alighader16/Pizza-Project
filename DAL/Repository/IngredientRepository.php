@@ -1,6 +1,5 @@
 <?php
 
-
 function getIngredients()
 {
     global $conn;

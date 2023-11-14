@@ -33,7 +33,7 @@
         <ul class="navbarNB">
             <li><a href="homepage.php">Home</a></li>
             <li><a href="about_us.php">About</a></li>
-            <li><a href="#menu">Menu</a></li>
+            <li><a href="menu.php">Menu</a></li>
             <li><a href="contact_us.php">Contact</a></li>
         </ul>
         <div class="h-icons">
@@ -215,8 +215,10 @@
                             <h3 class="timeline__slide-title">The Founder</h3>
                             <div class="timeline__slide-content">
                                 <p>
-                                    The founder is John Kandy, a humble man born to a carpenter and a teacher. Because his parents
-                                    were always busy, John would always have to cook for his siblings. Later on in life, he got a job
+                                    The founder is John Kandy, a humble man born to a carpenter and a teacher. Because
+                                    his parents
+                                    were always busy, John would always have to cook for his siblings. Later on in life,
+                                    he got a job
                                     as a baker to supplement his parents salaries.
                                 </p>
                             </div>
@@ -225,19 +227,26 @@
                         <div class="timeline__slide">
                             <h3 class="timeline__slide-title">Mankoushe Store</h3>
                             <div class="timeline__slide-content">
-                                <p>Pizza Palace first started out as a humble mankoushe store in Tariq Jdide. It was renowned
-                                    for having the best cheese mankoushe in Beirut. So much so that it's continued success allowed
-                                    the founder the financial ability to rent out a new place and start a pizza restaurant.</p>
+                                <p>Pizza Palace first started out as a humble mankoushe store in Tariq Jdide. It was
+                                    renowned
+                                    for having the best cheese mankoushe in Beirut. So much so that it's continued
+                                    success allowed
+                                    the founder the financial ability to rent out a new place and start a pizza
+                                    restaurant.</p>
                             </div>
                         </div>
 
                         <div class="timeline__slide">
                             <h3 class="timeline__slide-title">Pizza Restaurant and Booming</h3>
                             <div class="timeline__slide-content">
-                                <p>Following the success of his Mankoushe store, John decided to open a restaurant of pizzas. At first, it was
-                                    a struggle as the recipes were new to him. But he later met and married an Italian woman visiting Lebanon,
-                                    who taught him all the tips and tricks to become the king of pizzas in Lebanon. A boom in the restuarant followed
-                                    and once again, John's restaurant became well-renowned across all of Lebanon, thereby crowning
+                                <p>Following the success of his Mankoushe store, John decided to open a restaurant of
+                                    pizzas. At first, it was
+                                    a struggle as the recipes were new to him. But he later met and married an Italian
+                                    woman visiting Lebanon,
+                                    who taught him all the tips and tricks to become the king of pizzas in Lebanon. A
+                                    boom in the restuarant followed
+                                    and once again, John's restaurant became well-renowned across all of Lebanon,
+                                    thereby crowning
                                     his place as the "Pizza Parlor"</p>
                             </div>
                         </div>
@@ -245,8 +254,10 @@
                         <div class="timeline__slide">
                             <h3 class="timeline__slide-title">The 2006 War</h3>
                             <div class="timeline__slide-content">
-                                <p>In 2006, an actual booming occured and destroyed John's Pizza Parlor. Although the restaurant
-                                    was completely destroyed, he did not hesitate to refound the restaurant from scratch.
+                                <p>In 2006, an actual booming occured and destroyed John's Pizza Parlor. Although the
+                                    restaurant
+                                    was completely destroyed, he did not hesitate to refound the restaurant from
+                                    scratch.
                                 </p>
                             </div>
                         </div>
@@ -254,9 +265,12 @@
                         <div class="timeline__slide">
                             <h3 class="timeline__slide-title">Revival</h3>
                             <div class="timeline__slide-content">
-                                <p>The Pizza Palace was fully restored in 2007 with a new decor and theme which impressed all of its customers.
-                                    In fact the entire branding of Pizza Palace changed from that of a low-end restaurant to a high-end restaurant
-                                    that has survived wars and countless troubles but is still able to deliver the best pizza in all of Lebanon. 
+                                <p>The Pizza Palace was fully restored in 2007 with a new decor and theme which
+                                    impressed all of its customers.
+                                    In fact the entire branding of Pizza Palace changed from that of a low-end
+                                    restaurant to a high-end restaurant
+                                    that has survived wars and countless troubles but is still able to deliver the best
+                                    pizza in all of Lebanon.
                                     As a result, the Pizza Parlor was officially upgraded to the "Pizza Palace"
                                 </p>
                             </div>
@@ -265,8 +279,10 @@
                         <div class="timeline__slide">
                             <h3 class="timeline__slide-title">Michelin Star</h3>
                             <div class="timeline__slide-content">
-                                <p>After decades of hard work, in 2017 the Pizza Palace achieved it's very first Michelen star which it holds
-                                    to this day, becoming one of the few restaurants in the MENA region to have ever done so.
+                                <p>After decades of hard work, in 2017 the Pizza Palace achieved it's very first
+                                    Michelen star which it holds
+                                    to this day, becoming one of the few restaurants in the MENA region to have ever
+                                    done so.
                                 </p>
                             </div>
                         </div>
@@ -278,41 +294,24 @@
 
         <!-- contact section -->
 
-        <section class="footer" id="footer">
-            <div class="main-footer">
-                <div class="footer-content">
-                    <h4>Services</h4>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#menu">Menu</a></li>
-                    <li><a href="/contact_us.html">Contact</a></li>
-                </div>
-
-                <div class="footer-content">
-                    <h4>Delivery</h4>
-                    <li><a href="#home">Uber Eats</a></li>
-                    <li><a href="#about">DoorDash</a></li>
-                    <li><a href="#menu">ChowNow</a></li>
-                    <li><a href="#contact">Toast TakeOut</a></li>
-                </div>
-
-                <div class="footer-content">
-                    <h4>Contact</h4>
-                    <li><a href="#home">Contact Us</a></li>
-                    <li><a href="#about">Press Center</a></li>
-                    <li><a href="#menu">Careers</a></li>
-                    <li><a href="#contact">FAQ</a></li>
-                </div>
-
-                <div class="footer-content">
-                    <h4>Follow Us</h4>
-                    <li><a href="#home">TikTok</a></li>
-                    <li><a href="#about">Twitter</a></li>
-                    <li><a href="#menu">Facebook</a></li>
-                    <li><a href="#menu">Instagramm</a></li>
-                </div>
+        <footer class="contact">
+            <h3>Pizza Palace Holdings LLC.</h3>
+            <div class="navbar-footer">
+                <a class="active" href="index.html">Home</a>
+                <a href="">Menu</a>
+                <a href="">About Us</a>
+                <a href="">Contact Us</a>
             </div>
-        </section>
+            <div class="image-footer-container">
+                <a href="https://www.instagram.com/acm_rhu/?hl=en"><img class="instagram-image" src="img/instaLogo.png"
+                        alt="Instagram Logo"></a>
+                <a href="https://www.linkedin.com/company/acm-rhu"><img class="linkedin-image"
+                        src="img/linkedinLogo.png" alt="LinkedIn Logo"></a>
+            </div>
+            <p class="footer-copyright">
+                Copyright &copy; 2023 RHU Advanced Web Students
+            </p>
+        </footer>
 
 
         <!-- scroll top -->

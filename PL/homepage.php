@@ -26,7 +26,7 @@
         <ul class="navbar">
             <li><a href="homepage.php">Home</a></li>
             <li><a href="about_us.php">About</a></li>
-            <li><a href="#">Menu</a></li>
+            <li><a href="menu.php">Menu</a></li>
             <li><a href="contact_us.php">Contact</a></li>
         </ul>
         <div class="h-icons">
@@ -136,18 +136,26 @@
                         </p>
                         <div class="star">
                             <?php
-                            $rating = $menuitem->rating; //this is line 139
+                            $rating = $menuitem->rating;
                             $fullStars = floor($rating);
                             $halfStar = ($rating - $fullStars) >= 0.5;
 
-                            //display full stars
+                            // display full stars
                             for ($i = 0; $i < $fullStars; $i++) {
                                 echo '<a href="#"><i class="bx bxs-star"></i></a>';
                             }
 
-                            //display half star if needed
+                            // display half star if needed
                             if ($halfStar) {
                                 echo '<a href="#"><i class="bx bxs-star-half"></i></a>';
+                                $emptyStars = 5 - $fullStars - 1; // calculate the number of empty stars needed
+                            } else {
+                                $emptyStars = 5 - $fullStars; // calculate the number of empty stars needed
+                            }
+
+                            // display empty stars
+                            for ($i = 0; $i < $emptyStars; $i++) {
+                                echo '<a href="#"><i class="bx bx-star"></i></a>';
                             }
                             ?>
                         </div>
@@ -244,7 +252,7 @@
 
     </main>
     <footer class="contact">
-        <img src="img/logo-alternative.png" alt="Pizza Palace" width="100" height="100">
+        <h3>Pizza Palace Holdings LLC.</h3>
         <div class="navbar-footer">
             <a class="active" href="index.html">Home</a>
             <a href="">Menu</a>

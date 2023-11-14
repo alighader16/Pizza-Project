@@ -34,7 +34,7 @@
         <ul class="navbarNB">
             <li><a href="homepage.php">Home</a></li>
             <li><a href="about_us.php">About</a></li>
-            <li><a href="#menu">Menu</a></li>
+            <li><a href="menu.php">Menu</a></li>
             <li><a href="contact_us.php">Contact</a></li>
         </ul>
         <div class="h-icons">
@@ -108,42 +108,24 @@
         </div>
 
         <!-- contact section -->
-
-        <section class="footer" id="footer">
-            <div class="main-footer">
-                <div class="footer-content">
-                    <h4>Services</h4>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#menu">Menu</a></li>
-                    <li><a href="/contact_us.html">Contact</a></li>
-                </div>
-
-                <div class="footer-content">
-                    <h4>Delivery</h4>
-                    <li><a href="#home">Uber Eats</a></li>
-                    <li><a href="#about">DoorDash</a></li>
-                    <li><a href="#menu">ChowNow</a></li>
-                    <li><a href="#contact">Toast TakeOut</a></li>
-                </div>
-
-                <div class="footer-content">
-                    <h4>Contact</h4>
-                    <li><a href="#home">Contact Us</a></li>
-                    <li><a href="#about">Press Center</a></li>
-                    <li><a href="#menu">Careers</a></li>
-                    <li><a href="#contact">FAQ</a></li>
-                </div>
-
-                <div class="footer-content">
-                    <h4>Follow Us</h4>
-                    <li><a href="#home">TikTok</a></li>
-                    <li><a href="#about">Twitter</a></li>
-                    <li><a href="#menu">Facebook</a></li>
-                    <li><a href="#menu">Instagramm</a></li>
-                </div>
+        <footer class="contact">
+            <h3>Pizza Palace Holdings LLC.</h3>
+            <div class="navbar-footer">
+                <a class="active" href="index.html">Home</a>
+                <a href="">Menu</a>
+                <a href="">About Us</a>
+                <a href="">Contact Us</a>
             </div>
-        </section>
+            <div class="image-footer-container">
+                <a href="https://www.instagram.com/acm_rhu/?hl=en"><img class="instagram-image" src="img/instaLogo.png"
+                        alt="Instagram Logo"></a>
+                <a href="https://www.linkedin.com/company/acm-rhu"><img class="linkedin-image"
+                        src="img/linkedinLogo.png" alt="LinkedIn Logo"></a>
+            </div>
+            <p class="footer-copyright">
+                Copyright &copy; 2023 RHU Advanced Web Students
+            </p>
+        </footer>
 
 
         <!-- scroll top -->

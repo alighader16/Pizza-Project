@@ -16,6 +16,8 @@ class MenuItem{
 
     public $is_featured;
     public $image;
+
+    public $query;
     
     public $ingredients = [];//this is line 20
 

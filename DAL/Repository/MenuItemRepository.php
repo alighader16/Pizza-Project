@@ -15,7 +15,6 @@ function getMenuItems($query){
     }
 
     $menu_items = array();
-
     while ($row = mysqli_fetch_assoc($result)) {
         $menu_item = new MenuItem();
         $menu_item->title = ($row['Title']);
@@ -29,6 +28,7 @@ function getMenuItems($query){
         $menu_item->image = ($row['Image']);
         $menu_item = getIngredientsOfMenuItem($menu_item);
         $menu_item = getVariantsOfMenuItem($menu_item);
+        $menu_item->query = ($query);
         $menu_items[] = $menu_item;
     }
 
@@ -36,7 +36,6 @@ function getMenuItems($query){
 
     return $menu_items;
 }
-// get all menu items
 function getActiveMenuItems()
 {
     $query = "SELECT * FROM menuitem m 
@@ -45,6 +44,17 @@ function getActiveMenuItems()
     WHERE m.IsActive = 1 ;";
     return getMenuItems($query);
 }
+
+
+function getDeletedMenuItems()
+{
+    $query = "SELECT * FROM menuitem m 
+    INNER JOIN menuitemimage i 
+    ON m.MenuItemID = i.MenuItemID 
+    WHERE m.IsActive = 0 ;";
+    return getMenuItems($query);
+}
+
 
 
 function getFeaturedMenuItems()
