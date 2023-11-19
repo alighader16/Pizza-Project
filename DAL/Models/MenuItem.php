@@ -22,6 +22,8 @@ class MenuItem{
     public $ingredients = [];//this is line 20
 
     public $variants = [];
+
+    public $category = [];
 }
 
 ?>

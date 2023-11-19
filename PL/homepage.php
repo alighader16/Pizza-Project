@@ -108,8 +108,7 @@
                     }
                     ?>
                     <div class="featured-items-row">
-                        <img src="<?php echo $menuitem->image;
-                        ; ?>" alt="<?php echo $menuitem->title; ?>">
+                    <img src="<?php echo $menuitem->image; ?>" alt="<?php echo $menuitem->title; ?>" data-menuitemid="<?php echo $menuitem->menuitem_id; ?>" class="menuitem-image">
                         <div class="menu-text">
                             <div class="menu-left">
                                 <h4>

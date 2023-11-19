@@ -37,4 +37,11 @@ $(document).ready(function() {
   sr.reveal('.home-text', { delay: 200, origin: 'left' });
   sr.reveal('.about_us_cover', { delay: 200, origin: 'top' });
   sr.reveal('.Restaurant_Info, .about, .menu, .footer, .meet_our_team', { delay: 200, origin: 'bottom' });
+
+  
+    $('body').on('click', '.menuitem-image', function () {
+        var menuitemId = $(this).data("menuitemid");
+        var menuitemUrl = 'menuitem.php?menuitemid=' + menuitemId;
+        window.location.href = menuitemUrl;
+    });
 });

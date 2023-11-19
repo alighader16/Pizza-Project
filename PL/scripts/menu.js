@@ -19,11 +19,10 @@ $(document).ready(function () {
                         var ingredientTitles = menuitem.ingredients.join(", ");
                         var fullStars = Math.floor(menuitem.rating);
                         var halfStar = (menuitem.rating - fullStars) >= 0.5;
-                        console.log(menuitem.query);
                         // Construct HTML for the menu item
                         var menuItemHTML = `
                             <div class="featured-items-row">
-                                <img src="${menuitem.image}" alt="${menuitem.title}">
+                            <img src="${menuitem.image}" alt="${menuitem.title}" data-menuitemid="${menuitem.menuitem_id}" class="menuitem-image">
                                 <div class="menu-text">
                                     <div class="menu-left">
                                         <h4>${menuitem.title}</h4>
