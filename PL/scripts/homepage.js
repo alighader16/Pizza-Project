@@ -26,7 +26,4 @@ $(document).ready(function () {
     formattedPrice = parseFloat(price).toFixed(2);
     $(cardParent).find(".last-row-price").text("$" + formattedPrice);
   });
-
-
-
 });

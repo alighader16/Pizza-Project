@@ -1,3 +1,7 @@
+<?php 
+  require 'navbar2.php';
+  
+  ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -27,21 +31,7 @@
     <link rel="stylesheet" href="styles/timeline.css">
 
 <body>
-    <!-- header section -->
-    <header>
-        <a href="#" class="logo"><img src="img/logo.png" alt="logo"></a>
-        <ul class="navbarNB">
-            <li><a href="homepage.php">Home</a></li>
-            <li><a href="about_us.php">About</a></li>
-            <li><a href="menu.php">Menu</a></li>
-            <li><a href="contact_us.php">Contact</a></li>
-        </ul>
-        <div class="h-icons">
-            <a href="#"><i class='bx bx-search'></i></a>
-            <a href="#"><i class='bx bx-cart'></i></a>
-            <div class="bx bx-menu" id="menu-icon"></div>
-        </div>
-    </header>
+ 
 
 
     <!-- Main section -->
@@ -56,7 +46,7 @@
                 <img src="img/pizzaAbout3.png" alt="dsass">
             </div>
             <div id="button_container">
-                <a href="menu.html">Check Out Our Menu</a>
+                <a href="menu.php">Check Out Our Menu</a>
             </div>
         </section>
         <!--/ Main cover / -->
@@ -101,7 +91,7 @@
                     freshest ingredients. Our mission is simple: to share the joy of
                     authentic, Italian-inspired pizza with the world.
                 </p>
-                <a href="#" class="btn">Choose a Pizza</a>
+                <a href="menu.php" class="btn">Choose a Pizza</a>
             </div>
         </section>
         <!-- /Story -->
@@ -215,10 +205,8 @@
                             <h3 class="timeline__slide-title">The Founder</h3>
                             <div class="timeline__slide-content">
                                 <p>
-                                    The founder is John Kandy, a humble man born to a carpenter and a teacher. Because
-                                    his parents
-                                    were always busy, John would always have to cook for his siblings. Later on in life,
-                                    he got a job
+                                    The founder is John Kandy, a humble man born to a carpenter and a teacher. Because his parents
+                                    were always busy, John would always have to cook for his siblings. Later on in life, he got a job
                                     as a baker to supplement his parents salaries.
                                 </p>
                             </div>
@@ -227,26 +215,19 @@
                         <div class="timeline__slide">
                             <h3 class="timeline__slide-title">Mankoushe Store</h3>
                             <div class="timeline__slide-content">
-                                <p>Pizza Palace first started out as a humble mankoushe store in Tariq Jdide. It was
-                                    renowned
-                                    for having the best cheese mankoushe in Beirut. So much so that it's continued
-                                    success allowed
-                                    the founder the financial ability to rent out a new place and start a pizza
-                                    restaurant.</p>
+                                <p>Pizza Palace first started out as a humble mankoushe store in Tariq Jdide. It was renowned
+                                    for having the best cheese mankoushe in Beirut. So much so that it's continued success allowed
+                                    the founder the financial ability to rent out a new place and start a pizza restaurant.</p>
                             </div>
                         </div>
 
                         <div class="timeline__slide">
                             <h3 class="timeline__slide-title">Pizza Restaurant and Booming</h3>
                             <div class="timeline__slide-content">
-                                <p>Following the success of his Mankoushe store, John decided to open a restaurant of
-                                    pizzas. At first, it was
-                                    a struggle as the recipes were new to him. But he later met and married an Italian
-                                    woman visiting Lebanon,
-                                    who taught him all the tips and tricks to become the king of pizzas in Lebanon. A
-                                    boom in the restuarant followed
-                                    and once again, John's restaurant became well-renowned across all of Lebanon,
-                                    thereby crowning
+                                <p>Following the success of his Mankoushe store, John decided to open a restaurant of pizzas. At first, it was
+                                    a struggle as the recipes were new to him. But he later met and married an Italian woman visiting Lebanon,
+                                    who taught him all the tips and tricks to become the king of pizzas in Lebanon. A boom in the restuarant followed
+                                    and once again, John's restaurant became well-renowned across all of Lebanon, thereby crowning
                                     his place as the "Pizza Parlor"</p>
                             </div>
                         </div>
@@ -254,10 +235,8 @@
                         <div class="timeline__slide">
                             <h3 class="timeline__slide-title">The 2006 War</h3>
                             <div class="timeline__slide-content">
-                                <p>In 2006, an actual booming occured and destroyed John's Pizza Parlor. Although the
-                                    restaurant
-                                    was completely destroyed, he did not hesitate to refound the restaurant from
-                                    scratch.
+                                <p>In 2006, an actual booming occured and destroyed John's Pizza Parlor. Although the restaurant
+                                    was completely destroyed, he did not hesitate to refound the restaurant from scratch.
                                 </p>
                             </div>
                         </div>
@@ -265,12 +244,9 @@
                         <div class="timeline__slide">
                             <h3 class="timeline__slide-title">Revival</h3>
                             <div class="timeline__slide-content">
-                                <p>The Pizza Palace was fully restored in 2007 with a new decor and theme which
-                                    impressed all of its customers.
-                                    In fact the entire branding of Pizza Palace changed from that of a low-end
-                                    restaurant to a high-end restaurant
-                                    that has survived wars and countless troubles but is still able to deliver the best
-                                    pizza in all of Lebanon.
+                                <p>The Pizza Palace was fully restored in 2007 with a new decor and theme which impressed all of its customers.
+                                    In fact the entire branding of Pizza Palace changed from that of a low-end restaurant to a high-end restaurant
+                                    that has survived wars and countless troubles but is still able to deliver the best pizza in all of Lebanon. 
                                     As a result, the Pizza Parlor was officially upgraded to the "Pizza Palace"
                                 </p>
                             </div>
@@ -279,10 +255,8 @@
                         <div class="timeline__slide">
                             <h3 class="timeline__slide-title">Michelin Star</h3>
                             <div class="timeline__slide-content">
-                                <p>After decades of hard work, in 2017 the Pizza Palace achieved it's very first
-                                    Michelen star which it holds
-                                    to this day, becoming one of the few restaurants in the MENA region to have ever
-                                    done so.
+                                <p>After decades of hard work, in 2017 the Pizza Palace achieved it's very first Michelen star which it holds
+                                    to this day, becoming one of the few restaurants in the MENA region to have ever done so.
                                 </p>
                             </div>
                         </div>
@@ -312,6 +286,7 @@
                 Copyright &copy; 2023 RHU Advanced Web Students
             </p>
         </footer>
+
 
 
         <!-- scroll top -->

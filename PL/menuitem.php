@@ -1,3 +1,9 @@
+<?php
+require 'connection.php';
+require 'navbar2.php';
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -19,6 +25,7 @@
     <link rel="stylesheet" href="styles/menu.css">
     <link rel="stylesheet" href="styles/input-quantity.css">
     <link rel="stylesheet" href="styles/menuitem.css">
+    <link rel="stylesheet" href="styles/review-card.css">
 </head>
 
 <body>
@@ -33,6 +40,7 @@
 
     $menuitem_id = $_GET['menuitemid'];
     $menuitem = getMenuItemById($menuitem_id);
+    $menuitemBackUp = $menuitem;
     $menu_items = getMenuItemsByCategory($menuitem->category, $menuitem->title);
 
     if (!$menuitem) {
@@ -40,27 +48,13 @@
         exit();
     }
     ?>
-    <header>
-        <a href="#" class="logo"><img src="img/logo.png" alt="logo"></a>
-        <ul class="navbar">
-            <li><a href="homepage.php">Home</a></li>
-            <li><a href="about_us.php">About</a></li>
-            <li><a href="menu.php">Menu</a></li>
-            <li><a href="contact_us.php">Contact</a></li>
-        </ul>
-        <div class="h-icons">
-            <a href="#"><i class='bx bx-search'></i></a>
-            <a href="#"><i class='bx bx-cart'></i></a>
-            <div class="bx bx-menu" id="menu-icon"></div>
-        </div>
-    </header>
 
 
     <main>
 
         <section id="menuitem-section" class="menu">
             <div id="menuitem-image">
-                <img src="<?php echo $menuitem->image; ?>" alt="<?php echo $menuitem->title; ?>">
+                <img id="menuitem-image-inner" src="<?php echo $menuitem->image; ?>" alt="<?php echo $menuitem->title; ?>" >
             </div>
             <div id="menuitem-details">
                 <h4 id="menuitem-category">
@@ -252,7 +246,6 @@
             </div>
 
         </section>
-
     </main>
 
     <footer class="contact">
@@ -288,6 +281,7 @@
         <script src="scripts/main.js"></script>
         <script src="scripts/category-slider.js"></script>
         <script src="scripts/menuitem.js"></script>
+        <script src="scripts/review-card.js"></script>
     </div>
 
 

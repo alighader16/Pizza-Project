@@ -1,3 +1,11 @@
+<?php
+require 'connection.php';
+require 'navbar2.php';
+
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,29 +22,68 @@
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/input-quantity.css">
     <link rel="stylesheet" href="styles/homepage.css">
+    <style>
+        .bx-cart {
+            text-decoration: none;
+        }
+
+        .bx-cart {
+            text-decoration: none;
+        }
+
+
+        a {
+            text-decoration: none;
+        }
+    </style>
+
+
 
 
 
 </head>
 
 <body>
+    <?php /*
+<header>
+<a href="#" class="logo"><img src="img/logo.png" alt="logo"></a>
+<ul class="navbar">
+   <li><a href="homepage.php">Home</a></li>
+   <li><a href="about_us.php">About</a></li>
+   <li><a href="#">Menu</a></li>
+   <li><a href="contact_us.php">Contact</a></li>
+   <li><a href="signup.php">Sign Up</a></li>
+   <li><a href="login.php">Log in</a></li>
+</ul>
+<div class="h-icons">
+   <a href="#"><i class='bx bx-search'></i></a>
+   <?php
+   session_start();
+   if (isset($_SESSION['username'])) {
+       
+       $username = $_SESSION['username'];
+       $query=$conn->prepare('Select image from customer where username=?');
+       $query->bind_param('s', $username);
+       $query->execute();
+       $result = $query->get_result();
+       $row= $result->fetch_assoc();
 
-    <header>
-        <a href="#" class="logo"><img src="img/logo.png" alt="logo"></a>
-        <ul class="navbar">
-            <li><a href="homepage.php">Home</a></li>
-            <li><a href="about_us.php">About</a></li>
-            <li><a href="menu.php">Menu</a></li>
-            <li><a href="contact_us.php">Contact</a></li>
-        </ul>
-        <div class="h-icons">
-            <a href="#"><i class='bx bx-search'></i></a>
-            <a href="#"><i class='bx bx-cart'></i></a>
-            <div class="bx bx-menu" id="menu-icon"></div>
-        </div>
-    </header>
-
-
+       
+       $userImage = $row['image']; 
+       if ($userImage) {
+           echo '<a href="profile.php" class="user-icon"><img src="' . $userImage . '" alt="User Image" class="user-image"></a>';
+       } else {
+           echo '<a href="profile.php"><i class="bx bx-user"></i></a>';
+       }
+   } else {
+       echo '<a href="profile.php"><i class="bx bx-user"></i></a>';
+   }
+   ?>
+   <div class="bx bx-menu" id="menu-icon"></div>
+</div>
+</header>
+*/
+    ?>
     <!-- home section -->
     <section class="home" id="home">
         <div class="home-text">
@@ -45,7 +92,7 @@
                 We craft our pizzas with the finest ingredients and passion, ensuring every slice is a
                 delightful experience. Tales of our cuisine have been told from Ireland to Cathay.
                 Join us and discover the magic of pizza perfection.</p>
-            <a href="#" class="btn">Order Now</a>
+            <a href="menu.php" class="btn">Order Now</a>
         </div>
 
         <div class="home-img">
@@ -108,7 +155,8 @@
                     }
                     ?>
                     <div class="featured-items-row">
-                    <img src="<?php echo $menuitem->image; ?>" alt="<?php echo $menuitem->title; ?>" data-menuitemid="<?php echo $menuitem->menuitem_id; ?>" class="menuitem-image">
+                        <img src="<?php echo $menuitem->image; ?>" alt="<?php echo $menuitem->title; ?>"
+                            data-menuitemid="<?php echo $menuitem->menuitem_id; ?>" class="menuitem-image">
                         <div class="menu-text">
                             <div class="menu-left">
                                 <h4>
@@ -246,7 +294,7 @@
                 our house-made dough that is allowed to rise slowly, developing a unique flavor and texture.
                 Then, we top it with a delightful selection of premium ingredients, ensuring each bite is a
                 burst of flavors and a celebration of tradition.</p>
-            <a href="#" class="btn">Our Story</a>
+            <a href="about_us.php" class="btn">Our Story</a>
         </section>
 
     </main>
@@ -281,7 +329,6 @@
     <script src="scripts/homepage.js"></script>
     <script src="scripts/main.js"></script>
     <script src="scripts/input-quantity.js"></script>
-
 
 </body>
 

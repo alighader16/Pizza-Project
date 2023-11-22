@@ -52,6 +52,13 @@
         justify-content: center;
         align-items: center;
     }
+    #menuitem-image {
+        max-width: 100%;
+        min-width: 100%;
+    }
+    #menuitem-details{
+        width:100%;
+    }
 }
 
 

@@ -1,3 +1,8 @@
+
+<?php
+require 'navbar2.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -28,21 +33,7 @@
     <link rel="stylesheet" href="styles/about_us.css">
 
 <body>
-    <!-- header section -->
-    <header>
-        <a href="#" class="logo"><img src="img/logo.png" alt="logo"></a>
-        <ul class="navbarNB">
-            <li><a href="homepage.php">Home</a></li>
-            <li><a href="about_us.php">About</a></li>
-            <li><a href="menu.php">Menu</a></li>
-            <li><a href="contact_us.php">Contact</a></li>
-        </ul>
-        <div class="h-icons">
-            <a href="#"><i class='bx bx-search'></i></a>
-            <a href="#"><i class='bx bx-cart'></i></a>
-            <div class="bx bx-menu" id="menu-icon"></div>
-        </div>
-    </header>
+
 
     <main>
         <div id="contact" class="contact-area section-padding">
@@ -126,7 +117,6 @@
                 Copyright &copy; 2023 RHU Advanced Web Students
             </p>
         </footer>
-
 
         <!-- scroll top -->
         <a href="#about" class="scroll-top">

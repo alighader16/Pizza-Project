@@ -80,8 +80,6 @@ header{
 .h-icons i{
 	font-size: 22px;
 	color: var(--bg-color);
-	margin-right: 15px;
-	margin-left: 8px;
 }
 #menu-icon{
 	font-size: 32px;
