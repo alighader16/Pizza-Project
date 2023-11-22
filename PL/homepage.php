@@ -1,3 +1,11 @@
+<?php
+require 'connection.php';
+require 'navbar2.php';
+
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,29 +22,68 @@
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/input-quantity.css">
     <link rel="stylesheet" href="styles/homepage.css">
+    <style>
+        .bx-cart {
+            text-decoration: none;
+        }
+
+        .bx-cart {
+            text-decoration: none;
+        }
+
+
+        a {
+            text-decoration: none;
+        }
+    </style>
+
+
 
 
 
 </head>
 
 <body>
+    <?php /*
+<header>
+<a href="#" class="logo"><img src="img/logo.png" alt="logo"></a>
+<ul class="navbar">
+   <li><a href="homepage.php">Home</a></li>
+   <li><a href="about_us.php">About</a></li>
+   <li><a href="#">Menu</a></li>
+   <li><a href="contact_us.php">Contact</a></li>
+   <li><a href="signup.php">Sign Up</a></li>
+   <li><a href="login.php">Log in</a></li>
+</ul>
+<div class="h-icons">
+   <a href="#"><i class='bx bx-search'></i></a>
+   <?php
+   session_start();
+   if (isset($_SESSION['username'])) {
+       
+       $username = $_SESSION['username'];
+       $query=$conn->prepare('Select image from customer where username=?');
+       $query->bind_param('s', $username);
+       $query->execute();
+       $result = $query->get_result();
+       $row= $result->fetch_assoc();
 
-    <header>
-        <a href="#" class="logo"><img src="img/logo.png" alt="logo"></a>
-        <ul class="navbar">
-            <li><a href="homepage.php">Home</a></li>
-            <li><a href="about_us.php">About</a></li>
-            <li><a href="#">Menu</a></li>
-            <li><a href="contact_us.php">Contact</a></li>
-        </ul>
-        <div class="h-icons">
-            <a href="#"><i class='bx bx-search'></i></a>
-            <a href="#"><i class='bx bx-cart'></i></a>
-            <div class="bx bx-menu" id="menu-icon"></div>
-        </div>
-    </header>
-
-
+       
+       $userImage = $row['image']; 
+       if ($userImage) {
+           echo '<a href="profile.php" class="user-icon"><img src="' . $userImage . '" alt="User Image" class="user-image"></a>';
+       } else {
+           echo '<a href="profile.php"><i class="bx bx-user"></i></a>';
+       }
+   } else {
+       echo '<a href="profile.php"><i class="bx bx-user"></i></a>';
+   }
+   ?>
+   <div class="bx bx-menu" id="menu-icon"></div>
+</div>
+</header>
+*/
+    ?>
     <!-- home section -->
     <section class="home" id="home">
         <div class="home-text">
@@ -108,8 +155,8 @@
                     }
                     ?>
                     <div class="featured-items-row">
-                        <img src="<?php echo $menuitem->image;
-                        ; ?>" alt="<?php echo $menuitem->title; ?>">
+                        <img src="<?php echo $menuitem->image; ?>" alt="<?php echo $menuitem->title; ?>"
+                            data-menuitemid="<?php echo $menuitem->menuitem_id; ?>" class="menuitem-image">
                         <div class="menu-text">
                             <div class="menu-left">
                                 <h4>
@@ -136,18 +183,26 @@
                         </p>
                         <div class="star">
                             <?php
-                            $rating = $menuitem->rating; //this is line 139
+                            $rating = $menuitem->rating;
                             $fullStars = floor($rating);
                             $halfStar = ($rating - $fullStars) >= 0.5;
 
-                            //display full stars
+                            // display full stars
                             for ($i = 0; $i < $fullStars; $i++) {
                                 echo '<a href="#"><i class="bx bxs-star"></i></a>';
                             }
 
-                            //display half star if needed
+                            // display half star if needed
                             if ($halfStar) {
                                 echo '<a href="#"><i class="bx bxs-star-half"></i></a>';
+                                $emptyStars = 5 - $fullStars - 1; // calculate the number of empty stars needed
+                            } else {
+                                $emptyStars = 5 - $fullStars; // calculate the number of empty stars needed
+                            }
+
+                            // display empty stars
+                            for ($i = 0; $i < $emptyStars; $i++) {
+                                echo '<a href="#"><i class="bx bx-star"></i></a>';
                             }
                             ?>
                         </div>
@@ -244,7 +299,7 @@
 
     </main>
     <footer class="contact">
-        <img src="img/logo-alternative.png" alt="Pizza Palace" width="100" height="100">
+        <h3>Pizza Palace Holdings LLC.</h3>
         <div class="navbar-footer">
             <a class="active" href="index.html">Home</a>
             <a href="">Menu</a>
@@ -274,7 +329,6 @@
     <script src="scripts/homepage.js"></script>
     <script src="scripts/main.js"></script>
     <script src="scripts/input-quantity.js"></script>
-
 
 </body>
 

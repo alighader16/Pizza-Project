@@ -1,6 +1,5 @@
 <?php
 
-
 function getIngredients()
 {
     global $conn;
@@ -17,7 +16,6 @@ function getIngredients()
         $ingredient = new Ingredient();
         $ingredient->name = ($row['Name']);
         $ingredient->ingredient_id = ($row['IngredientID']);
-        $ingredient->added_price = ($row['AddedPrice']);
         $ingredients[] = $ingredient;
     }
 

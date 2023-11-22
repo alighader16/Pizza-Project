@@ -18,6 +18,11 @@
 	--p-font: 1.1rem;
 }
 
+
+input, select, option, textarea, .ctrl {
+	background-color: var(--bg-color) !important;
+}
+
 body {
 	background: var(--bg-color);
 	color: var(--text-color);
@@ -563,14 +568,12 @@ h5 {
 
 /* footer code */
 footer {
-	background-color: white;
+	background-color: #ff9100;
 	padding: 10px 20px;
-	color: black;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	background-image: url("../img/background.jpg");
 }
 
 footer>* {
@@ -586,12 +589,13 @@ footer>.navbar-footer>a {
 	text-decoration: none;
 	font-size: 16px;
 	padding: 10px 40px;
-	color: black;
+	color: white;
 }
 
 
 footer>.navbar-footer>a:hover {
-	color: #ff9100;
+	cursor: pointer;
+	text-decoration: underline;
 }
 
 
@@ -624,8 +628,12 @@ footer>.image-footer-container {
 }
 
 .footer-copyright {
-	color: rgb(50, 50, 50);
+	color: white;
 	font-size: 10px;
+}
+
+footer h3{
+	color:white !important;
 }
 
 
